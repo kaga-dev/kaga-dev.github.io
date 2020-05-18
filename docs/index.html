@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="stateful-faas">Stateful FaaS</h1>
+<h2 id="towards-serverless"><strong>Towards Serverless</strong></h2>
+<h3 id="difference-between-iaas-saas-paas-caas-faas">Difference between IaaS SaaS PaaS CaaS FaaS!!</h3>
+<h4 id="infrastructure-as-a-service-iaas">Infrastructure as a Service (IaaS)</h4>
+<p>It provides only a base infrastructure (Virtual machine, Software Define Network, Storage attached). End user have to configure and manage platform and environment, deploy applications on it.</p>
+<p>AWS (EC2), GCP (CE), Microsoft Azure (VM) are examples of Iaas.</p>
+<h4 id="software-as-a-service-saas">Software as a Service (SaaS)</h4>
+<p>It is sometimes called to as &#x201C;on-demand software&#x201D;. Typically accessed by users using a thin client via a web browser. In SaaS everything can be managed by vendors: applications, runtime, data, middleware, OSes, virtualization, servers, storage and networking, End users have to use it.</p>
+<p>GMAIL is Best example of SaaS. Google team managing everything just we have to use the application through any of client or in browsers. Other examples SAP, Salesforce .</p>
+<h4 id="platform-as-a-service-paas">Platform as a Service (PaaS)</h4>
+<p>It provides a platform allowing end user to develop, run, and manage applications without the complexity of building and maintaining the infrastructure.</p>
+<p>Google App Engine, CloudFoundry, Heroku, AWS (Beanstalk) are some examples of PaaS.</p>
+<h4 id="container-as-a-service-caas">Container as a Service (CaaS)</h4>
+<p>Is a form of container-based virtualization in which container engines, orchestration and the underlying compute resources are delivered to users as a service from a cloud provider.</p>
+<p>Google Container Engine(GKE), AWS (ECS), Azure (ACS) and Pivotal (PKS) are some examples of CaaS.</p>
+<h4 id="function-as-a-service-faas">Function as a Service (FaaS)</h4>
+<p>It provides a platform allowing customers to develop, run, and manage application functionalities without the complexity of building and maintaining the infrastructure.</p>
+<p>AWS (Lamda), Google Cloud Function are some examples of Faas</p>
+<p>A decade later, &#x201C;serverless&#x201D; entered the mainstream conversation and is now <a href="https://trends.google.com/trends/explore?date=today%205-y&amp;geo=US&amp;q=serverless" target="_blank">recognized</a> almost universally. The term has been linked to Backend as a Service (BaaS), such as the authentication services offered by providers like Facebook; or Function as a Service (Faas), where applications with server-side logic are run over stateless containers, and completely managed by 3rd party providers.</p>
+<h2 id="existing-system">Existing System</h2>
+<p>The programming model is still mainly limited to stateless functions &#x2014; the so-called Function-as-a-Service (FaaS) model &#x2014; which limits the range of use-cases supported.</p>
+<p>Functions are extremely useful as low-level building blocks for software. Functional programming is all about programming with functions &#x2014; working with functions as first-class values that can be sent around, composed, and reused. It&#x2019;s a great abstraction to use. Functions can be defined as essentially simple Lego blocks, that have well-defined input and well-defined output &#x2014; taking data in, processing it, and emitting new data as output. A pure function is stateless, which makes it predictable, you can trust that given a certain input it will always produce the same output.</p>
+<p>The output of one function can become the input of the other, making it possible to string them together just like Lego blocks, composing larger pieces of functionality from small reusable parts. Individual functions are by themselves not that useful because they (should) have a limited scope, providing a single well-defined piece of functionality. But by composing them into larger functions you can build rich and powerful components or services. Scala is one example of a mainstream language with a powerful functional side (the other side being OO).</p>
+<p>FaaS is building on the idea of composing these small well-defined pieces of functionality into larger workflows, all driven by the production and consumption of events (of data). This data-shipping architecture is great for data processing oriented use-cases where functions are composed into workflows processing data downstream and eventually producing a result to be emitted as an event to be consumed by the user or some other service or system.</p>
+<p>But it is not a general platform for building modern real-time data-centric applications and systems. As with all targeted solutions designed to solve a narrow and specific problem well, it suffers from painful constraints and limitations when used beyond its intended scope.</p>
+<p>One such limitation is that FaaS functions are ephemeral, stateless, and short-lived (for example, Amazon Lambda caps their lifespan to 15 minutes). This makes it problematic to build general-purpose data-centric cloud native applications since it is simply too costly &#x2014; in terms of performance, latency, and throughput &#x2014; to lose the computational context (locality of reference) and being forced to load and store the state from the backend storage over and over again. Another limitation is that functions have no direct addressability, which means that they can&#x2019;t communicate directly with each other using point-to-point communication but always need to resort to publish-subscribe, passing all data over some slow and expensive storage medium. A model that can work well for event-driven use-cases but yields too high latency for addressing general-purpose distributed computing problems. For a detailed discussion on this, and other limitations and problems with FaaS read the paper <a href="http://cidrdb.org/cidr2019/papers/p119-hellerstein-cidr19.pdf" target="_blank">&#x201C;Serverless Computing: One Step Forward, Two Steps Back&#x201D;</a> by Joe Hellerstein, et al.</p>
+<p>Functions is a great tool that has its place in the cloud computing toolkit, but for serverless to reach the grand vision that the industry is demanding of an ops-less world while allowing us to build modern data-centric real-time applications, we can&#x2019;t continue to ignore the hardest problem in distributed systems: managing state &#x2014; your data.</p>
+<h2 id="proposed-system">Proposed System</h2>
+<p>We have designed the System, where we could able to solve the stateless problem, with the help of <strong>State serialization of the Interpreter</strong>, hence we could able to run multiple Functions and Class Objects over the multiplatform devices such as Smart phone, Cloud and IOT devices over the fly. Common Software design pattern called as <strong>Async Observable Pattern</strong> is used to solve the multi architecture problem. </p>
+<h2 id="limitations">Limitations</h2>
+<p>Currently, <strong>Python</strong> is the only language supported, as we have strong dependency on the python interpreter. It has the capability to retrieve the complete state of the interpreter, at any given time. The solution to this problem, is to design the <strong>state trackers</strong> over the <strong>transpilation</strong>, for any other existing languages. It is the out of the scope of our topic, and it requires it&apos;s own engineering efforts.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-18T12:30:49.425Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-18T12:45:34.432Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
